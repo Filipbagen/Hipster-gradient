@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-image: linear-gradient(to right, #5b9aff, #ff5b70); */
+}
+
+.hipsterName {
+  color: white;
+  font-family: Ikaros;
+  text-align: center;
+}
+
+button {
+  color: white;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-style: none;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.2s;
+}
+
+
+@font-face {
+font-family: 'Ikaros';
+src: url('../font/Ikaros-Regular.otf');
+}
