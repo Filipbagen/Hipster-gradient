@@ -2,14 +2,16 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* background-image: linear-gradient(to right, #5b9aff, #ff5b70); */
+  height: 100vh;
 }
 
-.hipsterName, .color {
+.info {
+  margin-top: 50vh;
   color: white;
   font-family: Ikaros;
   text-align: center;
   text-shadow: 0px 4px 20px rgba(0,0,0,0.5);
+  transform: translate(0, -50%);
 }
 
 .color {
@@ -23,10 +25,6 @@ button {
   padding: 10px 20px;
   border-radius: 20px;
   border-style: none;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translate(-50%);
   transition: 0.2s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
 }
