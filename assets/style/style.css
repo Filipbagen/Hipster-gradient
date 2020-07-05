@@ -18,6 +18,10 @@ body {
   font-size: 15px;
 }
 
+.color:hover {
+  cursor: pointer;
+}
+
 button {
   color: white;
   font-size: 15px;

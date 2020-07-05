@@ -1,9 +1,9 @@
 const gradient = () => {
-  displayWord()
-  displayGradient()
+  changeName()
+  changeGradient()
 }
 
-const displayWord = () => {
+const changeName = () => {
   const getWord = [
     'Avocado Toast',
     'Cray',
@@ -36,24 +36,21 @@ const displayWord = () => {
     'Bro'
   ]
 
-  const hipsterWord = getWord[Math.floor(Math.random() * getWord.length)]
-  document.querySelector('.hipsterName').textContent = hipsterWord
+  const randomWord = getWord[Math.floor(Math.random() * getWord.length)]
+
+  document.querySelector('.hipsterName').innerHTML = randomWord
 }
 
-const randHex1 = () => {
-  const randomColor1 = Math.floor(Math.random() * 16777215).toString(16)
-  return '#' + randomColor1
-}
+const changeGradient = () => {
+  const red1 = Math.round(Math.random() * 255)
+  const red2 = Math.round(Math.random() * 255)
+  const green1 = Math.round(Math.random() * 255)
+  const green2 = Math.round(Math.random() * 255)
+  const blue1 = Math.round(Math.random() * 255)
+  const blue2 = Math.round(Math.random() * 255)
 
-const randHex2 = () => {
-  const randomColor2 = Math.floor(Math.random() * 16777215).toString(16)
-  return '#' + randomColor2
-}
+  const gradient = 'linear-gradient(rgb(' + red1 + ',' + green1 + ',' + blue1 + '), rgb(' + red2 + ',' + green2 + ',' + blue2 + '))'
 
-const displayGradient = () => {
-  const color1 = randHex1()
-  const color2 = randHex2()
-  document.querySelector('.color').textContent = 'HEX' + ' (' + color1 + ')' + ' → ' + '(' + color2 + ')'
-  var gradient = 'linear-gradient(' + color1 + ', ' + color2 + ')'
   document.querySelector('body').style.background = gradient
+  document.querySelector('.color').innerHTML = gradient
 }
